@@ -18,7 +18,12 @@
 </head>
 <body>
     <header id="header">
+        <div class="contact-buttons">
+            <a href="https://wa.me/558612345678" class="contact-btn whatsapp" target="_blank" aria-label="Contato via WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="mailto:contato@evaristocampelo.edu.br" class="contact-btn email" aria-label="Contato via E-mail"><i class="fas fa-envelope"></i> E-mail</a>
+        </div>
         <h1>EJA 2025</h1>
+        <button class="hamburger" aria-label="Abrir menu"><i class="fas fa-bars"></i></button>
         <nav id="nav" aria-label="Navegação principal">
             <ul>
                 <li><a href="#home" class="link">Início</a></li>
@@ -48,6 +53,9 @@
                 <div class="carousel-item">
                     <img src="./assets/image/3.jpg" alt="Professor explicando conteúdo no quadro">
                 </div>
+                <div class="carousel-item">
+                    <img src="./assets/image/4.jpg" alt="Professor explicando conteúdo no quadro">
+                </div>
                 <button class="carousel-btn prev" aria-label="Slide anterior">❮</button>
                 <button class="carousel-btn next" aria-label="Próximo slide">❯</button>
                 <div class="carousel-dots">
@@ -56,7 +64,7 @@
                     <span class="dot"></span>
                 </div>
             </div>
-           
+            
         </section>
 
         <section id="escola">
@@ -180,7 +188,7 @@
 
     <div id="director-modal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
+            <span class="close" onclick="closeModal()">×</span>
             <h3>Contato com o Diretor</h3>
             <form id="director-form" aria-label="Formulário de contato com o diretor">
                 <input type="text" name="nome" placeholder="Nome completo" required>

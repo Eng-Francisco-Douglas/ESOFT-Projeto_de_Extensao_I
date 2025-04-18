@@ -20,7 +20,7 @@ body {
 #header {
     background: linear-gradient(to right, var(--primary-color), #a1c4cd);
     color: var(--secondary-color);
-    padding: 10px 30px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,14 +30,57 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.contact-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.contact-btn.whatsapp {
+    background-color: #25D366;
+}
+
+.contact-btn.email {
+    background-color: #0078D4;
+}
+
+.contact-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
 h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     filter: drop-shadow(5px 5px 0 #7b92ad);
+}
+
+.hamburger {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+#nav {
+    transition: transform 0.3s ease-in-out;
 }
 
 #nav ul {
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 
 #nav ul li {
@@ -46,8 +89,8 @@ h1 {
 
 #nav ul li a {
     text-decoration: none;
-    font-size: 1.2rem;
-    padding: 10px 20px;
+    font-size: 1.1rem;
+    padding: 8px 15px;
     transition: all 0.3s;
     color: var(--secondary-color);
 }
@@ -55,12 +98,12 @@ h1 {
 #nav ul li a:hover {
     color: #fff;
     background-color: var(--accent-color);
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 0 10px #7b92ad;
 }
 
 #container {
-    max-width: 80vw;
+    max-width: 90vw;
     margin: 0 auto;
     padding: 20px 0;
 }
@@ -93,7 +136,8 @@ h1 {
 
 .carousel-item img {
     width: 100%;
-    height: 450px;
+    height: auto;
+    max-height: 450px;
     object-fit: cover;
 }
 
@@ -151,12 +195,12 @@ h1 {
 }
 
 .home_texts h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--secondary-color);
 }
 
 .home_texts p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--secondary-color);
     margin: 10px 0;
 }
@@ -179,14 +223,14 @@ h1 {
 }
 
 section {
-    padding: 60px 0;
+    padding: 50px 0;
     text-align: center;
     opacity: 0;
     animation: fadeIn 0.8s ease-in forwards;
 }
 
 section h2 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     color: var(--secondary-color);
     margin-bottom: 20px;
 }
@@ -202,38 +246,38 @@ section h2 {
 .escola-valores {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     flex-wrap: wrap;
     margin: 20px 0;
 }
 
 .escola-valores div {
     background: #fff;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    width: 180px;
     text-align: center;
 }
 
 .escola-valores i {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--accent-color);
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .timeline {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     max-width: 600px;
     margin: 20px auto;
 }
 
 .timeline-item {
     background: #fff;
-    padding: 20px;
-    border-left: 5px solid var(--accent-color);
+    padding: 15px;
+    border-left: 4px solid var(--accent-color);
     border-radius: 5px;
     text-align: left;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -241,14 +285,14 @@ section h2 {
 
 .apresentacao-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
     margin: 20px 0;
 }
 
 .apresentacao-card {
     background: #fff;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -261,7 +305,7 @@ section h2 {
 
 .apresentacao-card img {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -287,7 +331,7 @@ section h2 {
 }
 
 .depoimentos {
-    margin: 40px 0;
+    margin: 30px 0;
 }
 
 .depoimentos-carousel {
@@ -299,7 +343,7 @@ section h2 {
 
 .depoimento-item {
     display: none;
-    padding: 20px;
+    padding: 15px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -314,7 +358,7 @@ section h2 {
 .contato-content {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
@@ -325,33 +369,33 @@ section h2 {
 
 .contato-form input, .contato-form textarea {
     width: 100%;
-    padding: 12px;
-    margin: 10px 0;
+    padding: 10px;
+    margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .contato-form textarea {
-    height: 150px;
+    height: 120px;
 }
 
 .contato-localizacao p {
-    margin: 10px 0;
+    margin: 8px 0;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 
 .contato-localizacao i {
     color: var(--accent-color);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 #footer {
     background: linear-gradient(to right, var(--primary-color), #a1c4cd);
     color: var(--secondary-color);
-    padding: 30px;
+    padding: 25px;
     text-align: center;
 }
 
@@ -361,7 +405,7 @@ section h2 {
 
 .footer-links a {
     color: var(--secondary-color);
-    margin: 0 15px;
+    margin: 0 12px;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -372,22 +416,22 @@ section h2 {
 
 .floating-banner {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 15px;
+    right: 15px;
     z-index: 1000;
 }
 
 .floating-banner button {
     background: var(--accent-color);
     color: #fff;
-    padding: 12px 20px;
+    padding: 10px 15px;
     border: none;
-    border-radius: 25px;
-    font-size: 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
 }
@@ -409,32 +453,32 @@ section h2 {
 
 .modal-content {
     background: #fff;
-    max-width: 500px;
-    margin: 10% auto;
-    padding: 20px;
+    max-width: 450px;
+    margin: 15% auto;
+    padding: 15px;
     border-radius: 10px;
     position: relative;
 }
 
 .modal-content .close {
     position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 1.5rem;
+    top: 8px;
+    right: 12px;
+    font-size: 1.3rem;
     cursor: pointer;
 }
 
 .modal-content form input,
 .modal-content form textarea {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 8px;
+    margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 .modal-content form textarea {
-    height: 120px;
+    height: 100px;
 }
 
 @keyframes fadeIn {
@@ -447,54 +491,111 @@ section h2 {
     to { transform: translateY(0); opacity: 1; }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     #header {
-        flex-direction: column;
-        padding: 20px;
+        flex-wrap: wrap;
+        padding: 15px;
     }
 
     h1 {
         font-size: 2.5rem;
+        order: 2;
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .contact-buttons {
+        order: 1;
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    .hamburger {
+        display: block;
+        order: 3;
+    }
+
+    #nav {
+        display: none;
+        width: 100%;
+        order: 4;
+    }
+
+    #nav.active {
+        display: block;
+        transform: translateY(0);
     }
 
     #nav ul {
         flex-direction: column;
-        gap: 10px;
+        background: var(--primary-color);
+        padding: 15px;
+        border-radius: 8px;
     }
 
-    .carousel-item img {
-        height: 300px;
-    }
-
-    .home_texts h2 {
-        font-size: 2.5rem;
-    }
-
-    .home_texts p {
-        font-size: 1.2rem;
-    }
-
-    .contato-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .floating-banner button {
-        font-size: 0.9rem;
-        padding: 10px 15px;
+    #nav ul li a {
+        display: block;
+        padding: 10px;
+        font-size: 1rem;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .carousel-item img {
-        height: 200px;
+        max-height: 250px;
     }
 
-    section h2 {
+    .home_texts h2 {
         font-size: 2rem;
     }
 
+    .home_texts p {
+        font-size: 1.1rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .escola-valores div {
+        width: 150px;
+    }
+
+    .apresentacao-card img {
+        height: 150px;
+    }
+
+    .contato-form, .contato-localizacao {
+        max-width: 100%;
+    }
+
+    .floating-banner button {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+
     .modal-content {
-        margin: 20% 10px;
+        margin: 20% 5%;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .contact-btn {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    .carousel-item img {
+        max-height: 200px;
+    }
+
+    .btn_saiba_mais {
+        padding: 10px 20px;
+        font-size: 1rem;
     }
 }
