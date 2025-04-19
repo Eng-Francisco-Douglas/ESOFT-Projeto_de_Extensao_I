@@ -3,58 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site oficial da EJA 2025 - Educação de Jovens e Adultos na Escola Evaristo Campelo de Matos, Assunção do Piauí. Transformando vidas através da educação.">
-    <meta name="keywords" content="EJA, Educação de Jovens e Adultos, Assunção do Piauí, Evaristo Campelo de Matos, educação inclusiva">
+    <meta name="description" content="EJA 2025 - Educação de Jovens e Adultos na Escola Evaristo Campelo de Matos, Assunção do Piauí. Transforme seu futuro com educação de qualidade.">
+    <meta name="keywords" content="EJA, Educação de Jovens e Adultos, Assunção do Piauí, Evaristo Campelo de Matos, educação inclusiva, matrícula EJA">
     <meta property="og:title" content="EJA 2025 - Escola Evaristo Campelo de Matos">
-    <meta property="og:description" content="Conheça o programa EJA na Escola Evaristo Campelo de Matos em Assunção do Piauí. Educação para jovens e adultos com inclusão e qualidade.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1523050854058-8df90110c9f1">
+    <meta property="og:description" content="Descubra o programa EJA na Escola Evaristo Campelo de Matos. Educação inclusiva para jovens e adultos em Assunção do Piauí. Faça sua matrícula hoje!">
+    <meta property="og:image" content="./assets/image/1.jpg">
     <title>EJA 2025 - Evaristo Campelo de Matos</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header id="header">
-        <div class="contact-buttons">
-            <a href="https://wa.me/558612345678" class="contact-btn whatsapp" target="_blank" aria-label="Contato via WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-            <a href="mailto:contato@evaristocampelo.edu.br" class="contact-btn email" aria-label="Contato via E-mail"><i class="fas fa-envelope"></i> E-mail</a>
+        <div class="logo">
+            <h1>EJA 2025</h1>
         </div>
-        <h1>EJA 2025</h1>
         <button class="hamburger" aria-label="Abrir menu"><i class="fas fa-bars"></i></button>
         <nav id="nav" aria-label="Navegação principal">
             <ul>
                 <li><a href="#home" class="link">Início</a></li>
                 <li><a href="#escola" class="link">Nossa Escola</a></li>
-                <li><a href="#sobre" class="link">Sobre Nós</a></li>
-                <li><a href="#apresentacao" class="link">Apresentação</a></li>
-                <li><a href="#eja" class="link">EJA</a></li>
+                <li><a href="#sobre" class="link">Sobre o EJA</a></li>
+                <li><a href="#apresentacao" class="link">Nossa Equipe</a></li>
+                <li><a href="#eja" class="link">Programa EJA</a></li>
                 <li><a href="#contato" class="link">Contato</a></li>
             </ul>
         </nav>
+        <div class="contact-buttons">
+            <a href="https://wa.me/558612345678" class="contact-btn whatsapp" target="_blank" aria-label="Contato via WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="mailto:contato@evaristocampelo.edu.br" class="contact-btn email" aria-label="Contato via E-mail"><i class="fas fa-envelope"></i> E-mail</a>
+        </div>
     </header>
 
     <main id="container">
-        <section id="home">
-            <div class="home_texts">
-                <h2>Transformando Vidas com Educação</h2>
-                <p>Na Escola Evaristo Campelo de Matos, a EJA oferece oportunidades para jovens e adultos construírem um futuro melhor em Assunção do Piauí.</p>
-                <button class="btn_saiba_mais" onclick="window.location.href='#eja'">Conheça o EJA</button>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h2>Transforme Seu Futuro com a EJA</h2>
+                <p>Junte-se à Escola Evaristo Campelo de Matos em Assunção do Piauí e retome seus estudos com um programa feito para você.</p>
+                <div class="hero-cta">
+                    <button class="btn-cta" onclick="window.location.href='#contato'">Faça Sua Matrícula</button>
+                    <a href="https://wa.me/558612345678" class="btn-secondary" target="_blank">Fale Conosco</a>
+                </div>
             </div>
-            <div class="carousel" aria-label="Carrossel de imagens">
+            <div class="hero-carousel">
                 <div class="carousel-item active">
-                    <img src="./assets/image/1.jpg" alt="Alunos estudando em uma sala de aula iluminada">
+                    <img src="./assets/image/1.jpg" alt="Alunos estudando em sala de aula" class="animate-image" data-animate="fade">
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/image/2.jpg" alt="Grupo de estudantes colaborando em projeto">
+                    <img src="./assets/image/2.jpg" alt="Grupo de estudantes colaborando" class="animate-image" data-animate="fade">
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/image/3.jpg" alt="Professor explicando conteúdo no quadro">
+                    <img src="./assets/image/3.jpg" alt="Professor explicando no quadro" class="animate-image" data-animate="fade">
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/image/4.jpg" alt="Professor explicando conteúdo no quadro">
+                    <img src="./assets/image/4.jpg" alt="Aula dinâmica com alunos" class="animate-image" data-animate="fade">
                 </div>
                 <button class="carousel-btn prev" aria-label="Slide anterior">❮</button>
                 <button class="carousel-btn next" aria-label="Próximo slide">❯</button>
@@ -62,25 +67,29 @@
                     <span class="dot active"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
+                    <span class="dot"></span>
                 </div>
             </div>
-            
         </section>
 
         <section id="escola">
             <h2>Escola Evaristo Campelo de Matos</h2>
-            <p>Fundada em 1995, a Escola Evaristo Campelo de Matos é um pilar da educação em Assunção do Piauí. Nosso compromisso é oferecer ensino de qualidade, com foco na inclusão e na formação integral.</p>
+            <p>Desde 1995, somos referência em educação em Assunção do Piauí, oferecendo um ambiente acolhedor e programas educacionais que transformam vidas.</p>
             <div class="escola-valores">
                 <div><i class="fas fa-book"></i><p>Educação de Qualidade</p></div>
                 <div><i class="fas fa-users"></i><p>Inclusão Social</p></div>
                 <div><i class="fas fa-hand-holding-heart"></i><p>Respeito e Empatia</p></div>
+                <div><i class="fas fa-graduation-cap"></i><p>Formação Integral</p></div>
             </div>
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Fachada moderna da Escola Evaristo Campelo de Matos" class="section-image">
+            <div class="image-gallery">
+                <img src="./assets/image/1.jpg" alt="Fachada da escola" class="gallery-image animate-image" data-animate="slide">
+                <img src="./assets/image/2.jpg" alt="Alunos em atividade" class="gallery-image animate-image" data-animate="slide">
+            </div>
         </section>
 
         <section id="sobre">
             <h2>Sobre o Programa EJA</h2>
-            <p>O EJA 2025 é mais do que educação: é uma ponte para o futuro. Nosso objetivo é reintegrar jovens e adultos ao ensino, promovendo cidadania, qualificação profissional e transformação social.</p>
+            <p>O EJA é uma oportunidade única para jovens e adultos que desejam retomar os estudos e alcançar seus sonhos. Nosso programa combina flexibilidade, qualidade e apoio personalizado.</p>
             <div class="timeline">
                 <div class="timeline-item">
                     <h3>2010</h3>
@@ -91,6 +100,10 @@
                     <p>Expansão com cursos profissionalizantes.</p>
                 </div>
                 <div class="timeline-item">
+                    <h3>2020</h3>
+                    <p>Modernização do ensino com novas tecnologias.</p>
+                </div>
+                <div class="timeline-item">
                     <h3>2025</h3>
                     <p>Meta: atender 500 alunos em Assunção do Piauí.</p>
                 </div>
@@ -98,25 +111,25 @@
         </section>
 
         <section id="apresentacao">
-            <h2>Conheça Nossos Alunos e Professores</h2>
+            <h2>Conheça Nossa Equipe e Alunos</h2>
             <div class="apresentacao-grid">
                 <div class="apresentacao-card">
-                    <img src="https://images.unsplash.com/photo-1543269865-0a740d43b90c" alt="Professor João Silva sorrindo em sala de aula">
+                    <img src="./assets/image/3.jpg" alt="Professor João Silva" class="animate-image" data-animate="fade">
                     <h3>João Silva</h3>
                     <p>Professor de Matemática</p>
                 </div>
                 <div class="apresentacao-card">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2" alt="Professora Maria Oliveira lecionando">
+                    <img src="./assets/image/4.jpg" alt="Professora Maria Oliveira" class="animate-image" data-animate="fade">
                     <h3>Maria Oliveira</h3>
                     <p>Professora de Português</p>
                 </div>
                 <div class="apresentacao-card">
-                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9" alt="Aluna Ana Costa estudando">
+                    <img src="./assets/image/1.jpg" alt="Aluna Ana Costa" class="animate-image" data-animate="fade">
                     <h3>Ana Costa</h3>
                     <p>Aluna do EJA</p>
                 </div>
                 <div class="apresentacao-card">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" alt="Aluno Pedro Santos em aula prática">
+                    <img src="./assets/image/2.jpg" alt="Aluno Pedro Santos" class="animate-image" data-animate="fade">
                     <h3>Pedro Santos</h3>
                     <p>Aluno do EJA</p>
                 </div>
@@ -124,16 +137,17 @@
         </section>
 
         <section id="eja">
-            <h2>Educação de Jovens e Adultos (EJA)</h2>
-            <p>A EJA é uma oportunidade para quem deseja retomar os estudos e conquistar novos horizontes. Nosso programa oferece:</p>
+            <h2>Por que Escolher o EJA?</h2>
+            <p>Nosso programa é projetado para atender às suas necessidades, com horários flexíveis e ensino de qualidade. Veja o que oferecemos:</p>
             <ul>
-                <li><i class="fas fa-check-circle"></i> Aulas noturnas e flexíveis para atender trabalhadores.</li>
-                <li><i class="fas fa-check-circle"></i> Ensino fundamental e médio com certificação reconhecida.</li>
+                <li><i class="fas fa-check-circle"></i> Aulas noturnas para trabalhadores.</li>
+                <li><i class="fas fa-check-circle"></i> Certificação reconhecida para ensino fundamental e médio.</li>
                 <li><i class="fas fa-check-circle"></i> Cursos profissionalizantes integrados.</li>
                 <li><i class="fas fa-check-circle"></i> Acompanhamento pedagógico personalizado.</li>
+                <li><i class="fas fa-check-circle"></i> Atividades práticas e projetos comunitários.</li>
             </ul>
             <div class="depoimentos">
-                <h3>Depoimentos</h3>
+                <h3>Depoimentos de Alunos</h3>
                 <div class="depoimentos-carousel">
                     <div class="depoimento-item active">
                         <p>"A EJA mudou minha vida. Consegui meu diploma e hoje trabalho como auxiliar administrativo!"</p>
@@ -143,22 +157,35 @@
                         <p>"Os professores são incríveis e me ajudaram a acreditar no meu potencial."</p>
                         <h4>- Pedro Santos, aluno</h4>
                     </div>
+                    <div class="depoimento-item">
+                        <p>"Voltei a estudar e agora sonho em fazer faculdade. A EJA me deu essa chance!"</p>
+                        <h4>- Carla Mendes, aluna</h4>
+                    </div>
                 </div>
             </div>
-            <img src="https://images.unsplash.com/photo-1516321310764-65f0f9a8e561" alt="Aula dinâmica de EJA com alunos engajados" class="section-image">
+            <div class="cta-section">
+                <h3>Faça Parte da EJA 2025!</h3>
+                <p>Não perca a oportunidade de transformar sua vida. Entre em contato e faça sua matrícula hoje!</p>
+                <button class="btn-cta" onclick="window.location.href='#contato'">Matricule-se Agora</button>
+            </div>
         </section>
 
         <section id="contato">
             <h2>Entre em Contato</h2>
             <div class="contato-content">
                 <div class="contato-form">
-                    <h3>Envie sua Mensagem</h3>
-                    <form id="contact-form" aria-label="Formulário de contato">
+                    <h3>Pré-Matrícula</h3>
+                    <form id="matricula-form" aria-label="Formulário de pré-matrícula">
                         <input type="text" name="nome" placeholder="Nome completo" required>
                         <input type="email" name="email" placeholder="E-mail" required>
-                        <input type="tel" name="telefone" placeholder="Telefone (opcional)">
-                        <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-                        <button type="submit" class="btn_saiba_mais">Enviar Mensagem</button>
+                        <input type="tel" name="telefone" placeholder="Telefone" required>
+                        <select name="nivel" required>
+                            <option value="" disabled selected>Selecione o nível</option>
+                            <option value="fundamental">Ensino Fundamental</option>
+                            <option value="medio">Ensino Médio</option>
+                        </select>
+                        <textarea name="mensagem" placeholder="Por que você quer estudar na EJA?" required></textarea>
+                        <button type="submit" class="btn-cta">Enviar Pré-Matrícula</button>
                     </form>
                 </div>
                 <div class="contato-localizacao">
@@ -178,7 +205,11 @@
             <a href="#home">Início</a>
             <a href="#eja">EJA</a>
             <a href="#contato">Contato</a>
-            <a href="#apresentacao">Apresentação</a>
+            <a href="#apresentacao">Nossa Equipe</a>
+        </div>
+        <div class="social-links">
+            <a href="https://wa.me/558612345678" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:contato@evaristocampelo.edu.br" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
         </div>
     </footer>
 
@@ -194,7 +225,7 @@
                 <input type="text" name="nome" placeholder="Nome completo" required>
                 <input type="email" name="email" placeholder="E-mail" required>
                 <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-                <button type="submit" class="btn_saiba_mais">Enviar</button>
+                <button type="submit" class="btn-cta">Enviar</button>
             </form>
         </div>
     </div>
